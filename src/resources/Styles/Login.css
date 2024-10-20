@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+.AnchorPane {
+    -fx-background-color: #9CD8E2;
+}
 .root {
     -fx-background-color: #f4f4f4;
+    -fx-alignment: center;
 }
 
 .text-field {
@@ -9,19 +16,41 @@
     -fx-padding: 10;
 }
 
-.button {
-    -fx-background-color: #4CAF50;
-    -fx-text-fill: white;
-    -fx-border-radius: 5;
-    -fx-padding: 10;
-    -fx-font-size: 14px;
-}
 
-.button:hover {
-    -fx-background-color: #45a049;
-}
 
-.label {
-    -fx-font-size: 14px;
+.libname_label {
+    -fx-font-size: 35px;
+    -fx-font-family: "Fleur De Leah", cursive;
     -fx-text-fill: #333;
+}
+.username_password_label {
+    -fx-font-size: 20px;
+    -fx-font-family: "Permanent Marker", cursive;
+    -fx-text-fill: black;
+}
+
+/** nút quên tài khoản. */
+.button_forgotPassword {
+    -fx-font-size: 14px;
+    -fx-background-color: transparent;
+    -fx-text-fill: #E26F3C ;
+    -fx-underline: true;
+}
+.button_forgotPassword:hover {
+    -fx-text-fill: #000000; 
+    -fx-cursor: hand;
+}
+
+/** nút đăng nhâp. */
+.button_login {
+    -fx-text-fill: "White";
+    -fx-background-color: #E26F3C;
+    -fx-font-size: 20px;
+}
+.button_login:hover {
+    -fx-background-color: #3aa22e;
+    -fx-cursor: hand;
+}
+.button_login:pressed {
+    -fx-border-color: #1f6815;
 }
