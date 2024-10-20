@@ -13,7 +13,7 @@ public class App extends Application {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/resources/Fxml/Login.fxml"));
 
-            Scene scene = new Scene(root, 1280, 720);
+            Scene scene = new Scene(root, 1600, 900);
 
             primaryStage.setTitle("Library Management System");
 
