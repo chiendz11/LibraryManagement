@@ -7,10 +7,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="360.0" prefWidth="640.0" styleClass="AnchorPane" stylesheets="@../Styles/Login.css">
+      <AnchorPane prefHeight="722.0" prefWidth="742.0" styleClass="AnchorPane" stylesheets="@../Styles/Login.css">
          <children>
             <Label layoutX="294.0" layoutY="409.0" prefHeight="74.0" prefWidth="117.0" styleClass="username_password_label" text="User name" />
             <TextField layoutX="431.0" layoutY="426.0" prefHeight="40.0" prefWidth="206.0" />
