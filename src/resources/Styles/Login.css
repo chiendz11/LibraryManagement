@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Modak&display=swap');
 
 .AnchorPane_login {
     -fx-background-color: #9CD8E2;
@@ -14,11 +15,26 @@
     -fx-alignment: center;
 }
 
-.text-field {
+/** 1 số thứ về textfield*/
+.text-field, .password-field {
     -fx-background-color: white;
-    -fx-border-color: #ccc;
-    -fx-border-radius: 5;
-    -fx-padding: 10;
+    -fx-border-color: lightgray;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.text-field:focused {
+    -fx-border-color: blue; /* Khi TextField được chọn */
+    -fx-border-width: 2px;
+}
+
+.text-field.complete {
+    -fx-border-color: green; /* Khi hoàn thành */
+}
+
+.text-field.error {
+    -fx-border-color: red; /* Khi có lỗi */
 }
 
 
@@ -30,7 +46,8 @@
 }
 .username_password_label {
     -fx-font-size: 20px;
-    -fx-font-family: "Permanent Marker", cursive;
+    -fx-font-family: "Modak", system-ui;
+    -fx-font-weight: 400;
     -fx-text-fill: white;
 }
 
@@ -45,17 +62,42 @@
     -fx-text-fill: #000000; 
     -fx-cursor: hand;
 }
+.button_forgotPassword:pressed {
+    -fx-scale-x: 0.95; 
+    -fx-scale-y: 0.95; 
+}
 
 /** nút đăng nhâp. */
 .button_login {
     -fx-text-fill: "White";
     -fx-background-color: #E26F3C;
     -fx-font-size: 20px;
+    -fx-font-family: "Modak", system-ui;
 }
 .button_login:hover {
-    -fx-background-color: #3aa22e;
+    -fx-background-color: #B63F0F;
     -fx-cursor: hand;
 }
 .button_login:pressed {
-    -fx-border-color: #1f6815;
+    -fx-border-color: #B63F0F;
+}
+
+/** nút create new account*/
+.button_createnewaccount {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-family: "Modak", system-ui;
+}
+.button_createnewaccount:hover {
+    -fx-background-color: #005A26;
+    -fx-cursor: hand;
+}
+.button_createnewaccount:pressed {
+    -fx-border-color: #005A26;
+}
+
+/** Làm mờ chữ */
+.text_field_pretext {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
 }

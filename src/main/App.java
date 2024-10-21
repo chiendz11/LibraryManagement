@@ -5,28 +5,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import main.Views.ViewFactory;
 
 public class App extends Application {
-
     @Override
-    public void start(Stage primaryStage) {
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("/resources/Fxml/Login.fxml"));
-
-            Scene scene = new Scene(root, 1600, 900);
-
-            primaryStage.setTitle("Library Management System");
-
-            primaryStage.setScene(scene);
-
-            primaryStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    public void start(Stage stage) {
+        ViewFactory viewFactory = new ViewFactory();
+        viewFactory.showLoginWindow();
     }
-
     public static void main(String[] args) {
-        // Chạy ứng dụng JavaFX
         launch(args);
     }
 }
